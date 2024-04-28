@@ -101,7 +101,8 @@ img {
 /*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
-  display: grid;
+  display: flex;
+  gap: 15px;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
@@ -532,5 +533,13 @@ img {
   }
   .home__img {
     width: 450px;
+  }
+}
+
+
+@media screen and (max-width: 792px) {
+  .bd-grid {
+    align-items: center;
+    flex-direction: column;
   }
 }
